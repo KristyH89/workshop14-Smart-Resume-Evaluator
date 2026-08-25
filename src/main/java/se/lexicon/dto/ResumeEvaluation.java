@@ -12,7 +12,7 @@ public record ResumeEvaluation(
         @JsonPropertyDescription("Short verdict for the candidate, maximum 2 sentences")
         String summary,
 
-        @JsonPropertyDescription("Skills and experiences from the resume that match the job requirements")
+        @JsonPropertyDescription("Every requirement from the job description that the resume proves. Use the exact wording from the job description, followed by the evidence found in the resume. Include all matching requirements, not only the most obvious ones.")
         List<String> strengths,
 
         @JsonPropertyDescription("Required skills from the job description that are missing in the resume")
@@ -22,7 +22,10 @@ public record ResumeEvaluation(
         List<String> suggestions,
 
         @JsonPropertyDescription("Hiring recommendation based on the score")
-        Recommendation recommendation
+        Recommendation recommendation,
+
+        @JsonPropertyDescription("Every required skill from the job description, listed before scoring")
+                List<String> requiredSkills
 ) {
     public enum Recommendation {
         STRONG_MATCH, POSSIBLE_MATCH, WEAK_MATCH
