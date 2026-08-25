@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: resume-evaluator
+
+  ai:
+    retry:
+      max-attempts: 1
+    openai:
+      api-key: ${OPENAI_API_KEY}
+
+      chat:
+        options:
+          model: gpt-4o
+          temperature: 0.2
+          max-tokens: 1500
