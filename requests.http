@@ -1,8 +1,15 @@
-### Evaluate a resume against a job description
-POST http://localhost:8080/api/v1/evaluations
-Content-Type: application/json
+### Evaluate resume against job description, both as files
+POST http://localhost:8080/api/v1/evaluations/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
 
-{
-  "resumeText": "Kristy Heijenk, full stack developer student at Lexicon. Backend: Java, Spring Boot, REST APIs, layered architecture with services and DTOs. Frontend: React, TypeScript, Vite, Tailwind CSS. Projects: a subscription management API in Spring Boot and a flight search UI consuming a Spring Boot backend. Deployed projects to GitHub Pages and Vercel.",
-  "jobDescriptionText": "We are hiring a junior backend developer.\n\nRequired:\n1. Java 17 or higher\n2. Spring Boot\n3. REST API design\n4. SQL and relational databases\n5. Git\n\nNice to have: Docker, CI/CD pipelines, React\n\nYou will work in a Scrum team on our internal booking platform."
-}
+--WebAppBoundary
+Content-Disposition: form-data; name="resume"; filename="TestCV2.pdf"
+Content-Type: application/pdf
+
+< ./test-files/TestCV2.pdf
+--WebAppBoundary
+Content-Disposition: form-data; name="jobDescription"; filename="vacancy-poz.txt"
+Content-Type: text/plain
+
+< ./test-files/vacancy-poz.txt
+--WebAppBoundary--

@@ -1,0 +1,40 @@
+### Evaluate resume PDF against the POZ AI web designer vacancy
+POST http://localhost:8080/api/v1/evaluations/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="resume"; filename="cv.pdf"
+Content-Type: application/pdf
+
+< ./test-files/cv.pdf
+--WebAppBoundary
+Content-Disposition: form-data; name="jobDescriptionText"
+
+Web Designer at POZ AI, Ljungby
+
+About the role:
+As a web designer you turn an internal brief into an attractive, well-considered and user-friendly website. You are responsible for design and practical production, while the project manager handles client contact and provides you with briefs, priorities and feedback.
+
+You will:
+- Create layout, page structure and visual design
+- Build and publish websites in WordPress and Elementor
+- Create well-functioning solutions for desktop, tablet and mobile
+- Work with basic SEO, accessibility and performance
+- Set up and launch websites, and handle web hosting, SSL and domains
+- Update and further develop existing websites
+
+Required:
+1. Practical experience building websites in an established website builder environment, with examples of previous work you can show
+2. Understanding of how a website is built, published and maintained
+3. A good sense of form, structure and usability
+4. Ability to work independently and take responsibility for what you deliver
+5. Openness to feedback and comfort working closely with others
+6. Very good knowledge of Swedish, both spoken and written
+7. Good knowledge of English
+
+Nice to have: WordPress, Elementor, SEO, HTML, CSS
+
+Note: Formal education is not a requirement. Practical skills, work samples and the ability to contribute to the team weigh more heavily. Experience may come from employment, your own business, freelance work or your own completed projects.
+
+Employment: Full-time, permanent, on site in Ljungby, individual salary setting, start immediately or by agreement.
+--WebAppBoundary--

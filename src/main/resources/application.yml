@@ -13,3 +13,9 @@ spring:
           model: gpt-4o
           temperature: 0.2
           max-tokens: 1500
+
+  spring:
+    servlet:
+      multipart:
+        max-file-size: 5MB
+        max-request-size: 10MB

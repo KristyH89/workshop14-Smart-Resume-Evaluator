@@ -1,0 +1,25 @@
+Junior Fullstack Developer at Nordkod AB, Växjö
+
+About the role:
+You will join our product team and work on internal web applications used by our customers in logistics. You will write backend code, build frontend components and take part in code reviews. A senior developer will be your mentor during the first months.
+
+You will:
+- Build and maintain REST APIs in Java and Spring Boot
+- Develop user interfaces in React with TypeScript
+- Write unit tests and take part in code reviews
+- Work with the team in two-week sprints
+- Deploy features to our staging and production environments
+
+Required:
+1. Java, including object oriented programming
+2. Spring Boot and REST API design
+3. Basic knowledge of relational databases and SQL
+4. Frontend experience with React
+5. Version control with Git
+6. Ability to explain your technical choices in English
+
+Nice to have: TypeScript, Tailwind CSS, Docker, CI/CD pipelines, experience deploying to cloud platforms
+
+Note: This is a junior role. We expect a solid foundation and a willingness to learn, not years of professional experience. Personal projects, school projects and internships all count as relevant experience.
+
+Employment: Full-time, permanent, hybrid with two days per week at our office in Vaxjo, start by agreement.
