@@ -11,7 +11,7 @@ spring:
       chat:
         options:
           model: gpt-4o
-          temperature: 0.2
+          temperature: 0.0
           max-tokens: 1500
 
   spring:
