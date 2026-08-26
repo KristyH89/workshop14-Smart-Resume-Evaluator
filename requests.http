@@ -3,13 +3,13 @@ POST http://localhost:8080/api/v1/evaluations/upload
 Content-Type: multipart/form-data; boundary=WebAppBoundary
 
 --WebAppBoundary
-Content-Disposition: form-data; name="resume"; filename="TestCV2.pdf"
+Content-Disposition: form-data; name="resume"; filename="TestCV.pdf"
 Content-Type: application/pdf
 
-< ./test-files/TestCV2.pdf
+< ./test-files/TestCV.pdf
 --WebAppBoundary
-Content-Disposition: form-data; name="jobDescription"; filename="vacancy-poz.txt"
+Content-Disposition: form-data; name="jobDescription"; filename="vacancy-junior-dev.txt"
 Content-Type: text/plain
 
-< ./test-files/vacancy-poz.txt
+< ./test-files/vacancy-junior-dev.txt
 --WebAppBoundary--

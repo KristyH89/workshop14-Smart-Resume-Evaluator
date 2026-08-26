@@ -52,6 +52,10 @@ public class EvaluationController {
         String rawText = textExtractor.extractText(resume);
         String resumeText = redactionService.redact(rawText);
 
+        // Temporary: inspect what Tika extracted and what redaction left
+        System.out.println("=== RAW ===\n" + rawText);
+        System.out.println("=== REDACTED ===\n" + resumeText);
+
         // The job description may come as a file or as plain text
         String jobText = (jobDescription != null && !jobDescription.isEmpty())
                 ? textExtractor.extractText(jobDescription)
