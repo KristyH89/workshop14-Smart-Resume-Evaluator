@@ -24,8 +24,8 @@ public record ResumeEvaluation(
         @JsonPropertyDescription("Hiring recommendation based on the score")
         Recommendation recommendation,
 
-        @JsonPropertyDescription("Every required skill from the job description, listed before scoring")
-                List<String> requiredSkills
+        @JsonPropertyDescription("The requirements listed in the job description, copied verbatim. Do not include tasks or responsibilities.")
+        List<String> requiredSkills
 ) {
     public enum Recommendation {
         STRONG_MATCH, POSSIBLE_MATCH, WEAK_MATCH
